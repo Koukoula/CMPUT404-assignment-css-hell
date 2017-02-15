@@ -1,9 +1,12 @@
+ @import url('https://fonts.googleapis.com/css?family=Aguafina+Script|IM+Fell+English');
+
 /*body { margin:5%; background:#faebd0; text-align:justify} */
-body { margin:5%; background-image: url("assets/background.png"); text-align:justify; }
+body { margin:5%; background-image: url("assets/background.png"); text-align:justify; font-family: 'IM Fell English', serif;}
 p { text-indent: 1em; margin-top: .25em; margin-bottom: .25em; }
 h1,h2,h3,h4,h5,h6 { text-align: center; margin-left: 15%; margin-right: 15%; }
 .mynote    {background-color: #DDE; color: #000; padding: .5em; margin-left: 10%; margin-right: 10%; font-family: sans-serif; font-size: 95%;}
 .toc       { margin-left: 10%; margin-bottom: .75em;}
 div.fig    { display:block; margin:0 auto; text-align:center; filter: sepia(100%);}
-p.pfirst, p.noindent {text-indent: 0}
+p.pfirst {}
+p.noindent {text-indent: 0}
 span.dropcap         { float: left; margin: 0 0.1em 0 0; line-height: 1 }
