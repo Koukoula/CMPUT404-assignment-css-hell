@@ -104,10 +104,9 @@ li {
 }
 
 ol {
-	-webkit-margin-before: 0em;
-	-webkit-margin-after: 0em;
-	-webkit-padding-start: 0px;
-	padding-top: 0pt;
+	padding: 0em;
+	margin-top: 0em;
+	margin-bottom: 0px;
 }
 
 .mainNav a {
