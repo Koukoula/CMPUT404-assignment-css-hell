@@ -1,148 +1,193 @@
-/*I recommend using codepen to get quick updates on stuff*/
+/* Colors thanks to https://www.w3schools.com/colors/colors_picker.asp?colorhex=808080 */
+
 body {
-	font: 100%/1.4 'Comic Sans MS', sans-serif;
-	font-family:"Comic Sans MS", cursive
-	background-color: #fff;
-	margin: 0;
-	padding: 0;
-	color: #000;
+	font: 'Helvetica';
+	width: 100%;
+  margin: 0 auto;
+	height: 100%;
+	min-height: 100%;
 }
 
-h1, h2, h3, h4, h5, p {
-	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
-	padding-right: 15px;
-	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+h1 {
+	line-height: 0.5
 }
-/* should probably not seperate h6, and make our own thing, after some research*/
-h6 {
-    text-align: center;
+
+h2 {
+	padding-bottom: 0.25em;
+  margin: 0;
 }
-a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
-	border: none;
+
+h3 {
+	font-size: 16pt;
+	font-style: italic;
+	line-height: 0.05
 }
-/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+
+h4 {
+	color: #458aa8;
+	margin-bottom:0;
+}
+
 a:link {
-	color: #42413C;
-	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+    color: #458aa8;
 }
+
 a:visited {
-	color: #6E6C64;
-	text-decoration: underline;
+    color: #a872a5;
 }
 
+.leftBar {
 
-/* ~~this fixed width container surrounds the other divs~~ */
-.container {
-	width: 90%;
-	background-color: #FFF;
-	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 }
-/*For the top and bottom borders*/
-.borderTop {
-    top: 0;
-    position:relative;
-    z-index: 1;
-    width: 100%;
-    height: 40px;
-    box-shadow: 0px 5px 15px black;
-    background-color: brown;
+
+.rightBar {
+	content: "";
+	margin: 0;
+  padding: 0;
+  float: left;
+  height: 700px;
+  width: 100%;
+  background: #009999;
 }
-.borderBot {
+
+li {
+	display: inline;
 }
-/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+
+.topBar {
+	height: 2em;
+	background: saddlebrown;
+	background-image: url("assets/header.jpg");
+}
+
 .header {
-	background-color: #012ad0;
-	margin-top:0px;
-	margin-bottom:0px;
-	height:200px;
-	position:relative;
-}
-.header .nav{
-	position:absolute;
-	top:126px;
-	left:228px;	
-}
-.nav a{
-	display:block;
-	padding:10px 25px;
-	float:left;
-	background: #f4cf00; /* Old browsers */
-	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
-	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0Y2YwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjglIiBzdG9wLWNvbG9yPSIjZmZjODA1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOSUiIHN0b3AtY29sb3I9IiNmZmU0MDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI1OSUiIHN0b3AtY29sb3I9IiNmZmJkMDgiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiNmZjhkMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjQ2YTA3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
-	background: -moz-linear-gradient(top,  #f4cf00 0%, #ffc805 8%, #ffe400 9%, #ffbd08 59%, #ff8d00 60%, #f46a07 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4cf00), color-stop(8%,#ffc805), color-stop(9%,#ffe400), color-stop(59%,#ffbd08), color-stop(60%,#ff8d00), color-stop(100%,#f46a07)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #f4cf00 0%,#ffc805 8%,#ffe400 9%,#ffbd08 59%,#ff8d00 60%,#f46a07 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #f4cf00 0%,#ffc805 8%,#ffe400 9%,#ffbd08 59%,#ff8d00 60%,#f46a07 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #f4cf00 0%,#ffc805 8%,#ffe400 9%,#ffbd08 59%,#ff8d00 60%,#f46a07 100%); /* IE10+ */
-	background: linear-gradient(to bottom,  #f4cf00 0%,#ffc805 8%,#ffe400 9%,#ffbd08 59%,#ff8d00 60%,#f46a07 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4cf00', endColorstr='#f46a07',GradientType=0 ); /* IE6-8 */
-	color:#000;
-	text-decoration:none;
-	font-size:18px;	
+	padding-top: 1em;
+	height: 100%;
+	width: 100%;
+	color: white;
+	text-align: center;
+	background: radial-gradient(ellipse at center, #17a5ca 20%, #00659c 80%);
 }
 
+/* http://stackoverflow.com/a/37832765/7010980 Harry */
 
-/* ~~ These are the columns for the layout. ~~ 
-
-1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
-
-2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
-
-3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
-
-4) If you prefer your nav on the left instead of the right, simply float these columns the opposite direction (all left instead of all right) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
-
-*/
-.sidebar1 {
-	float: right;
-	width: 15%;
-	background-color: #d3d3d3;
-	padding-bottom: 10px;
-	text-align:center;
-	padding-top:20px;
-}
-.sidebar1 a{
-	color:#00545f;
-	text-decoration:none;	
-}
-.sidebar1 h1{
-	font-weight:normal;	
-}
-.content {
-
-	padding: 10px 0;
-	/*width: 780px;*/
-    width: 85%;
-	float: right;
+.logo {
+	padding-right:5%;
+	padding-left:5%;
+	font-size: 60pt;
+	background-image: linear-gradient(to bottom, white 60%, #ecd7b3 95%);
+	color: transparent;
+  -webkit-background-clip: text;
 }
 
-/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
-ul.nav {
-	list-style: none; /* this removes the list marker */
-	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
-	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+.logo::first-line{
+	line-height: 0.75;
+	font-size: 40pt;
+	text-align: right;
 }
-ul.nav li {
-	border-bottom: 1px solid #666; /* this creates the button separation */
+
+.slogan {
+	padding-right:25%;
+	padding-left:10%;
+	padding-bottom:1.5em;
+	font-size: 12pt;
+	color: white;
 }
-ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
-	padding: 5px 5px 5px 15px;
-	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
-	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+
+.header .mainNav {
+	background: linear-gradient(to bottom, #36322f 0%,#5e5e5e 100%);
+	list-style-type: none;
+	padding: 5pt;
+}
+
+.mainNav li {
+	font-size: 14pt;
+	color: white;
+	margin: 0.5em
+}
+
+.mainNav li a {
+	color: white;
 	text-decoration: none;
-	background-color: #C6D580;
-}
-ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
-	background-color: #ADB96E;
-	color: #FFF;
 }
 
-/* ~~ The footer ~~ */
+.mainNav li a:hover {
+	color: #17a5ca;
+}
+
+.mainNav a {
+	color: peru;
+	text-align: right;
+	text-decoration: none;
+}
+
+.sidebars {
+	margin: 0.5em;
+  width: 10em;
+  float: right;
+	text-align: center;
+}
+
+.sidebar1 {
+	padding-bottom: 1em;
+	padding-top: 1em;
+	background-color: #efefef;
+}
+
+.sidebar2 {
+	padding-top: 3.5em;
+	padding-bottom: 1em;
+	width: 10em;
+	text-align: center;
+}
+
+.sidebar2 div {
+}
+
+.sidebar2 a {
+	font-size: 10pt;
+	color: #a78360;
+	text-decoration: none;
+}
+
+.sidebar2 img {
+	margin-left: auto;
+  margin-right: auto;
+}
+
+.content {
+	margin: 1em;
+}
+
+.content img {
+	padding-right: 1em;
+	padding-bottom: 0.5em;
+}
+
+/* http://stackoverflow.com/a/689290/7010980 Jon Winstanley */
+
 .footer {
-	padding: 0px 0;
-	background-color: #CCC49F;
-    background-image: url("assets/wood_panel_desktop_by_doodler326-d8fu07u.png.jpeg");
-	position: relative;/* this gives IE6 hasLayout to properly clear */
-	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	clear: both;
+  position: relative;
+  height: 2em;
+  margin-top: -2em;
+	background: saddlebrown;
+	background-image: url("assets/footer.jpg");
+	width: 100%;
+	font-size: 12pt;
+	color: white;
+	text-align: center;
 }
 
+.bottomNav {
+	padding-top: 0.5em;
+}
+
+.bottomNav li {
+	margin: 1em
+}
+
+.bottomNav a {
+	color: white;
+	text-decoration: none;
+}
