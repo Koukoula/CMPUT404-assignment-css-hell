@@ -62,26 +62,25 @@ li {
 	padding-top: 1em;
 	height: 100%;
 	width: 100%;
-	color: white;
 	text-align: center;
+	color: white;
 	background: radial-gradient(ellipse at center, #17a5ca 20%, #00659c 80%);
 }
 
 /* http://stackoverflow.com/a/37832765/7010980 Harry */
 
 .logo {
-	padding-right:5%;
-	padding-left:5%;
-	font-size: 60pt;
+	padding-right:25%;
+	padding-left:10%;
+	font-size: 80pt;
 	background-image: linear-gradient(to bottom, white 60%, #ecd7b3 95%);
 	color: transparent;
   -webkit-background-clip: text;
+	line-height: 0.75
 }
 
 .logo::first-line{
-	line-height: 0.75;
 	font-size: 40pt;
-	text-align: right;
 }
 
 .slogan {
