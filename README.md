@@ -20,3 +20,12 @@ Textual content is copyright Abram Hindle (C) 2013 under the CC-BY-SA
 repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
+
+
+Changes to Project Gutenberg HTML files
+=======================================
+
+Changes made:
+  - Replaced inline CSS at beginning of file with reference to style.css
+  - Replaced certain style calls with classes to allow them to be modified across the file
+  - Minor changes to use of headers in 2.html to make them more consistent

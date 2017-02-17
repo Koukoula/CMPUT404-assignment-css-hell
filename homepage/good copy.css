@@ -1,0 +1,127 @@
+body {
+	font: 'Helvetica';
+	width: 100%;
+  margin: 0 auto;
+}
+
+h1,h2,h3 {
+	margin-bottom:0;
+}
+
+.leftBar {
+
+}
+
+.rightBar {
+	content: "";
+	margin: 0;
+  padding: 0;
+  float: left;
+  height: 700px;
+  width: 100%;
+  background: #009999;
+}
+
+li {
+	display: inline;
+}
+
+.topBar {
+	height: 2em;
+	background: saddlebrown;
+	float: top;
+	background-image: url(http://www.texturex.com/albums/Wood-Textures/red%20wood%20texture%20grain%20natural%20wooden%20paneling%20surface%20photo%20wallpaper.jpg);
+}
+
+.header {
+	padding-top: 0;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: radial-gradient(ellipse at center, #17a5ca 20%, #00659c 80%);
+}
+
+/* http://stackoverflow.com/a/37832765/7010980 Harry */
+
+.logo {
+	padding-right:25%;
+	padding-left:10%;
+	font-size: 80pt;
+	background-image: linear-gradient(to bottom, white 60%, #ecd7b3 95%);
+	color: transparent;
+  -webkit-background-clip: text;
+
+}
+
+.logo::first-line{
+	position: relative;
+	text-align: right;
+	font-size: 40pt;
+	padding-left: 10em;
+	/*position: relative; */
+}
+
+.slogan {
+	padding-right:25%;
+	padding-left:10%;
+	padding-bottom:1.5em;
+	font-size: 12pt;
+	color: white;
+}
+
+.header .mainNav {
+	background: linear-gradient(to bottom, #36322f 0%,#5e5e5e 100%);
+	padding: 5px;
+	list-style-type: none;
+}
+
+/* http://stackoverflow.com/a/10789749/7010980 by Zeta */
+
+.mainNav li {
+	font-size: 14pt;
+	color: white;
+	margin: 0.5em
+}
+
+.mainNav li a {
+	color: white;
+	text-decoration: none;
+}
+
+.mainNav a {
+	color: peru;
+	text-align: right;
+	text-decoration: none;
+}
+
+.sidebar {
+  width: 10em;
+  float: right;
+	text-align: center;
+	background-color: #efefef;
+}
+
+.sidebar li {
+		margin-left: 2em;
+}
+
+.footer {
+	height: 2em;
+	background: saddlebrown;
+	background-image: url(http://www.texturex.com/albums/Wood-Textures/red%20wood%20texture%20grain%20natural%20wooden%20paneling%20surface%20photo%20wallpaper.jpg);
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	font-size: 12pt;
+	color: white;
+	text-align: center;
+}
+
+.bottomNav {
+	padding-top: 0.5em;
+}
+
+.bottomNav li {
+	margin: 1em
+}
