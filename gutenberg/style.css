@@ -88,7 +88,15 @@ div.fig2 {
 p.pfirst {
   text-indent:0em;
 }
-
+/* Large first letter
+.dropcap {
+  float: left;
+  margin: -0.3em 0.1em -0.2em -0.1em;
+  line-height: 1.0;
+  font-size: 8em;
+  font-family: 'Cookie';
+}
+*/
 p + div + p a, p + h2 + p a {
   display:block;
   text-align:center;
@@ -110,12 +118,4 @@ blockquote + p {
 
 pre {
   font-family: 'IM Fell English', serif;}
-}
-
-span.dropcap {
-  float: left;
-  margin: -0.3em 0.1em -0.2em -0.1em;
-  line-height: 1.0;
-  font-size: 8em;
-  font-family: 'Cookie';
 }
