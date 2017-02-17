@@ -62,8 +62,6 @@ li {
 
 .header {
 	padding-top: 1em;
-	height: 100%;
-	width: 100%;
 	color: white;
 	text-align: center;
 	background: radial-gradient(ellipse at center, #17a5ca 20%, #00659c 80%);
@@ -96,7 +94,6 @@ li {
 
 .header .mainNav {
 	background: linear-gradient(to bottom, #36322f 0%,#5e5e5e 100%);
-	list-style-type: none;
 	padding: 5pt;
 }
 
@@ -106,19 +103,20 @@ li {
 	margin: 0.5em
 }
 
-.mainNav li a {
+ol {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+	-webkit-padding-start: 0px;
+	padding-top: 0pt;
+}
+
+.mainNav a {
 	color: white;
 	text-decoration: none;
 }
 
-.mainNav li a:hover {
+.mainNav a:hover {
 	color: #17a5ca;
-}
-
-.mainNav a {
-	color: peru;
-	text-align: right;
-	text-decoration: none;
 }
 
 .sidebars {
@@ -139,9 +137,6 @@ li {
 	padding-bottom: 1em;
 	width: 10em;
 	text-align: center;
-}
-
-.sidebar2 div {
 }
 
 .sidebar2 a {
