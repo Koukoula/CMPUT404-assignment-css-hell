@@ -21,7 +21,7 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
 
-Generally everything is LICENSE'D under the Apache 2 license by Panayioti Koukoulas and Noah Shillington.
+Generally everything is LICENSE'D under the CC BY-SA 4.0: https://creativecommons.org/licenses/by-sa/4.0/legalcode license by Panayioti Koukoulas and Noah Shillington.
 
 Further contributions are listed in the code and licensed under The MIT License: https://opensource.org/licenses/MIT.
 
