@@ -29,3 +29,17 @@ Changes made:
   - Replaced inline CSS at beginning of file with reference to style.css
   - Replaced certain style calls with classes to allow them to be modified across the file
   - Minor changes to use of headers in 2.html to make them more consistent
+
+CSS SOURCES
+===========
+http://boydstoast.com/ 
+    - General Layout
+    - Idea how to structure webpage
+
+https://developers.google.com/fonts/docs/getting_started
+    - How to import fonts from the google API
+
+https://css3gen.com/css3-text-effects/
+    - ugly webpage's fire like glow effect
+
+
