@@ -21,6 +21,10 @@ repository and (C) 2013 Abram Hindle visibile in the text.
 
 Code is licensed under the Apache 2.0 license.
 
+Generally everything is LICENSE'D under the Apache 2 license by Panayioti Koukoulas and Noah Shillington.
+
+Further contributions are listed in the code and licensed under The MIT License: https://opensource.org/licenses/MIT.
+
 
 Changes to Project Gutenberg HTML files
 =======================================
@@ -32,7 +36,7 @@ Changes made:
 
 CSS SOURCES
 ===========
-http://boydstoast.com/ 
+http://boydstoast.com/
     - General Layout
     - Idea how to structure webpage
 
@@ -41,5 +45,3 @@ https://developers.google.com/fonts/docs/getting_started
 
 https://css3gen.com/css3-text-effects/
     - ugly webpage's fire like glow effect
-
-
