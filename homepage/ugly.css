@@ -1,4 +1,9 @@
 /* Colors thanks to https://www.w3schools.com/colors/colors_picker.asp?colorhex=808080 */
+@keyframes rotate {
+    0%   {transform:rotate(0deg)};
+    100% {transform:rotate(360deg)};
+}
+
 body {
     cursor: none;
 	font: 100%/1.4 'Comic Sans MS', sans-serif;
@@ -57,9 +62,15 @@ li {
 }
 
 .topBar {
-	height: 2em;
-	background: saddlebrown;
+    position: absolute;
+    z-index: 1;
 	background-image: url("assets/header2.png");
+    width: 100%;
+    height: 43%;
+
+    background-repeat: no-repeat;
+
+
 }
 
 .header {
@@ -67,6 +78,7 @@ li {
 	color: white;
 	text-align: center;
 	background: radial-gradient(ellipse at center, #17a5ca 20%, #00659c 80%);
+
 }
 
 /* http://stackoverflow.com/a/37832765/7010980 Harry */
@@ -127,6 +139,7 @@ ol {
   width: 10em;
   float: right;
 	text-align: center;
+	color: pink;
 }
 
 .sidebar1 {
@@ -168,6 +181,7 @@ ol {
 .content img {
 	padding-right: 1em;
 	padding-bottom: 0.5em;
+    animation-name: rotate;
 }
 
 /* http://stackoverflow.com/a/689290/7010980 Jon Winstanley */
@@ -177,8 +191,8 @@ ol {
   position: relative;
   height: 2em;
   margin-top: -2em;
-	background: saddlebrown;
-	background-image: url("assets/footer.jpg");
+	background: yellow;
+
 	width: 100%;
 	font-size: 12pt;
 	color: white;
